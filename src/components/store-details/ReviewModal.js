@@ -50,6 +50,7 @@ const RestaurantReviewModal = ({
   restaurantDetails,
   configData,
 }) => {
+  console.log("hhhh", restaurantDetails);
   const [review_count, setReview_Count] = useState({});
   const theme = useTheme();
 
@@ -64,7 +65,7 @@ const RestaurantReviewModal = ({
     );
     return percentRate ? ((percentRate / total) * 100).toFixed(1) : 0;
   };
-
+  console.log("product_avg_rating", restaurantDetails);
   return (
     <Paper
       sx={{

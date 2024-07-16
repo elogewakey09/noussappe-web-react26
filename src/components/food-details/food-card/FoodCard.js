@@ -56,7 +56,7 @@ const FoodCard = ({ product, productImageUrl }) => {
   const { configData, token } = useSelector(
     (state) => state.configDataSettings
   );
-
+  console.log({ product });
   const { wishLists } = useSelector((state) => state.wishList);
   let currencySymbol;
   let currencySymbolDirection;

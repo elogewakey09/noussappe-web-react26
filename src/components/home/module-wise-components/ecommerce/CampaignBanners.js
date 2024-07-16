@@ -112,7 +112,7 @@ const CampaignBanners = (props) => {
     setOpenModal(false);
     //setBannerData(null);
   };
-
+  console.log({ bannersData });
   const getModuleWiseBanners = () => {
     switch (getCurrentModuleType()) {
       case ModuleTypes.GROCERY:

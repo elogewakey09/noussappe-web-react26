@@ -19,6 +19,7 @@ const VisitAgain = (props) => {
   const { configData, visitedStores, isVisited } = props;
   const theme = useTheme();
   const token = getToken();
+  console.log({ visitedStores });
   const getModuleWiseData = () => {
     switch (getCurrentModuleType()) {
       case ModuleTypes.GROCERY:

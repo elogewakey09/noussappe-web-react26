@@ -40,7 +40,7 @@ const ChatMessage = (props) => {
       return conversationData.conversation?.sender?.image_full_url;
     } else return configData?.logo_full_url;
   };
-
+  console.log({ conversationData });
   const customerImageUrl = configData?.base_urls?.customer_image_url;
   const authorType = messgageData.sender_id; //sender
   let userType;

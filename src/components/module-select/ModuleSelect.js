@@ -68,8 +68,9 @@ const ModuleSelect = ({
     (state) => state.categoryIds
   );
   const router = useRouter();
-
+  console.log({ existingModuleId });
   const handleModuleSelect = (item) => {
+    console.log({ item });
     dispatch(setSelectedModule(item));
     moduleSelectHandler(item);
     const isModuleExist = existingModuleId?.includes(item?.id);

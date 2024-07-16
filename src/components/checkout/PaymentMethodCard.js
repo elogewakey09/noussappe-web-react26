@@ -47,7 +47,7 @@ const PaymentMethodCard = (props) => {
     setIsCheckedOffline(false);
     dispatch(setOfflineInfoStep(0));
   };
-
+  console.log({ configData });
   const radioLabel = () => {
     return (
       <Stack

@@ -52,6 +52,7 @@ const HeroSection = ({ configData, landingPageData, handleOrderNow }) => {
       };
     }
   };
+  console.log({ landingPageData });
 
   return (
     <CustomContainer>

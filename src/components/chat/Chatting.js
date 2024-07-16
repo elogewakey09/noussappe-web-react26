@@ -229,7 +229,7 @@ const Chatting = ({ configData }) => {
       }
     }
   };
-
+  console.log({ receiverImage });
   const ChatImageUrl = () => {
     if (receiver?.receiver_type === "vendor") {
       return receiver?.receiver?.image_full_url;
@@ -245,7 +245,7 @@ const Chatting = ({ configData }) => {
       : receiverImage
       ? receiverImage
       : deliveryManData_image;
-
+  console.log({ deliveryManData_image });
   return (
     <PushNotificationLayout refetch={refetch} pathName="chat">
       <CustomBoxFullWidth

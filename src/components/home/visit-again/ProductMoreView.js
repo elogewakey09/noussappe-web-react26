@@ -11,6 +11,7 @@ import {
 import { getImageUrl } from "utils/CustomFunctions";
 
 const ProductMoreView = ({ products, width, height, justifyContent }) => {
+  console.log({ products });
   const { configData } = useSelector((state) => state.configData);
   return (
     <>

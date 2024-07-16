@@ -31,12 +31,15 @@ export const categoryIdsSlice = createSlice({
       state.selectedBrands = action.payload;
     },
     setRating_Count: (state, action) => {
+      console.log("payload", action.payload);
       state.rating_count = action.payload;
     },
     setInterestId: (state, action) => {
+      console.log("payload", action.payload);
       state.interestId = action.payload;
     },
     setExistingModuleIds: (state, action) => {
+      console.log("action", action.payload);
       state.existingModuleId = [...state.existingModuleId, action.payload];
     },
   },

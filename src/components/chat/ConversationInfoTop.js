@@ -17,6 +17,7 @@ const ConversationInfoTop = ({
   receiverType,
   adminUser,
 }) => {
+  console.log("ConversationInfoTop", userImage);
   const language_direction = localStorage.getItem("direction");
   return (
     <Stack>

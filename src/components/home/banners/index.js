@@ -88,6 +88,7 @@ const Banners = (props) => {
     }
   };
   const handleBannerClick = (banner) => {
+    console.log({ banner });
     if (banner?.isCampaign) {
       router.push(
         {
@@ -141,7 +142,7 @@ const Banners = (props) => {
     setOpenModal(false);
     //setBannerData(null);
   };
-
+  console.log({ bannersData });
   const getModuleWiseBanners = () => {
     switch (getCurrentModuleType()) {
       case ModuleTypes.GROCERY:

@@ -225,7 +225,7 @@ const ProductCard = (props) => {
     pharmaCommon,
     noRecommended,
   } = props;
-
+  console.log("vvvvvvvvvvvvvv", item);
   const [state, dispatch] = useReducer(reducer, initialState);
   const [openModal, setOpenModal] = React.useState(false);
   const [openLocationAlert, setOpenLocationAlert] = useState(false);

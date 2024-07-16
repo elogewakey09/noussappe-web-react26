@@ -23,7 +23,7 @@ const ReviewLists = ({ id }) => {
   useEffect(() => {
     refetch();
   }, []);
-
+  console.log({ data });
   return (
     <CustomStackFullWidth sx={{ minHeight: "60vh" }}>
       {data ? (

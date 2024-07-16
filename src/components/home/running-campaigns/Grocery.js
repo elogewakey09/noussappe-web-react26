@@ -34,9 +34,11 @@ export const Shimmer = () => (
 );
 const Grocery = (props) => {
   const { runningCampaigns, handleClick, configData, isFetching } = props;
+  console.log({ runningCampaigns });
   return (
     <Grid container spacing={2}>
       {runningCampaigns?.map((item, index) => {
+        console.log("ffffff", item?.image_full_url);
         return (
           <Grid
             item

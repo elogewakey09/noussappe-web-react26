@@ -124,7 +124,7 @@ const NewArrivalStores = () => {
       setStoreData(newStores);
     }
   };
-
+  console.log({ newArrivalStores });
   const sliderItems = (
     <SliderWrapper
       sx={{

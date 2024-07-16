@@ -74,6 +74,7 @@ const OrderDetailsModal = ({ orderDetailsModalOpen }) => {
     }
   }, [token]);
 
+  console.log({ orderInformation });
   return (
     <CustomModal
       openModal={orderDetailsModalOpen}

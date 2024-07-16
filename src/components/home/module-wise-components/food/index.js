@@ -64,7 +64,7 @@ const FoodModule = (props) => {
       }
     }
   }, [visitedStores, newStore?.stores, getModuleId()]);
-
+  console.log("bbbbbb", storeData);
   return (
     <Grid container spacing={1}>
       <Grid item xs={12} sx={{ marginTop: { xs: "-10px", sm: "10px" } }}>

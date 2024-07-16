@@ -53,6 +53,8 @@ const CartContent = (props) => {
   const guestId = localStorage.getItem("guest_id");
   const { mutate, isLoading: removeIsLoading } = useDeleteCartItem();
   const { mutate: updateMutate, isLoading } = useCartItemUpdate();
+  console.log({ cartItem });
+
   const cartUpdateHandleSuccess = (res) => {
     if (res) {
       res?.forEach((item) => {

@@ -58,7 +58,7 @@ const OrderCalculation = (props) => {
     customerData,
     initVauleEx,
   } = props;
-
+  console.log({ cashbackAmount });
   const token = getToken();
   const { t } = useTranslation();
   const [freeDelivery, setFreeDelivery] = useState("false");
@@ -111,7 +111,7 @@ const OrderCalculation = (props) => {
       return getAmountWithSign(couponDiscountValue);
     }
   };
-
+  console.log("vvvv", couponDiscount);
   const totalAmountForRefer = couponDiscount
     ? handlePurchasedAmount(cartList) -
       getProductDiscount(cartList, storeData) -

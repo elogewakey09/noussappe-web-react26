@@ -42,7 +42,7 @@ const Brands = ({ viewAll }) => {
   const handleSuccess = (response) => {
     dispatch(setBrands(response));
   };
-
+  console.log({ data });
   const { refetch, isLoading, isFetching } = useGetBrandsList(handleSuccess);
 
   useEffect(() => {

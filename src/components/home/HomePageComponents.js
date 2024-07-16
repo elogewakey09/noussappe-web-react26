@@ -77,6 +77,7 @@ const HomePageComponents = ({ configData }) => {
     }
   );
 
+  console.log({ data });
   useEffect(() => {
     if (token) lastReviewRefetch();
   }, [token]);

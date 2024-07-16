@@ -200,7 +200,7 @@ export const getCouponDiscount = (couponDiscount, storeData, cartList) => {
       switch (couponDiscount.coupon_type) {
         case "zone_wise":
           let zoneId = JSON.parse(localStorage.getItem("zoneid"));
-
+          console.log({ couponDiscount });
           if (
             Number.parseInt(zoneId[0]) ===
             Number.parseInt(couponDiscount.zoneId[0])
@@ -396,6 +396,7 @@ const handleProductWiseDiscount = (items) => {
             item.store_discount
           );
         totalDiscount += a * item.quantity;
+        console.log({ a });
       }
     } else {
       totalDiscount += item.discount;
@@ -453,6 +454,7 @@ export const getProductDiscount = (items, storeData) => {
       return handleProductWiseDiscount(items);
     }
   } else {
+    console.log("check", items);
     //product wise discount
     return handleProductWiseDiscount(items);
   }

@@ -78,7 +78,7 @@ const InfoCard = ({
   const isSender = data?.userinfo?.id === userList.last_message.sender_id;
   const isRead = !isLoading && !isSender && unRead > 0;
   const language_direction = localStorage.getItem("direction");
-
+  console.log("valo", userList);
   return (
     <CustomStackFullWidth
       direction="row"

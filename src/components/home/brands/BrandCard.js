@@ -11,7 +11,7 @@ const BrandCard = (props) => {
   const { image, name, stock, id, horizontal, baseUrl, items_count } = props;
   const theme = useTheme();
   const tabScreen = useMediaQuery("(max-width: 991px)");
-
+  console.log({ props });
   return (
     <>
       <Stack

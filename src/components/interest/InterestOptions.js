@@ -75,6 +75,7 @@ const InterestOptions = ({ configData }) => {
     );
   };
 
+  console.log({ selectedId });
   return (
     <CustomStackFullWidth
       spacing={1}

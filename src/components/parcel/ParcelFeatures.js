@@ -166,7 +166,7 @@ const ParcelFeatures = () => {
   if (!data?.banners?.length) {
     return null;
   }
-
+  console.log({ data });
   return (
     <>
       <CustomStackFullWidth

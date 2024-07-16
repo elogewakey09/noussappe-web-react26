@@ -13,7 +13,7 @@ const DeliveryManInfo = ({ configData, deliveryManData, storeData }) => {
   const router = useRouter();
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("md"));
-
+  console.log({ deliveryManData });
   const handleClick = () => {
     router.push({
       pathname: "/profile",

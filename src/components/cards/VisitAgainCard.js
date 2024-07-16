@@ -151,6 +151,7 @@ const VisitAgainCard = (props) => {
     handleClick();
   };
   const imageUrl = item?.cover_photo_full_url;
+  console.log({ item });
 
   const addToWishlistHandler = (e) => {
     e.stopPropagation();

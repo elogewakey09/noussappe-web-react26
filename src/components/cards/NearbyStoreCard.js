@@ -163,6 +163,7 @@ const NearbyStoreCard = (props) => {
     });
   };
 
+  console.log("hhhhh", item);
   return (
     <CustomStyledStack onClick={handleClick}>
       <CustomStyledBox>

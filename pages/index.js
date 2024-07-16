@@ -26,6 +26,7 @@ const Root = (props) => {
     } else {
     }
   }, [configData]);
+  console.log({ configData });
   return (
     <>
       <CssBaseline />

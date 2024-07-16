@@ -61,7 +61,7 @@ const BasicInformationForm = ({
   setEditProfile,
 }) => {
   const [openModal, setOpenModal] = useState(false);
-
+  console.log({ data });
   const imageContainerRef = useRef();
   const { f_name, l_name, phone, email, image_full_url } = data;
   const [showPassword, setShowPassword] = useState(false);

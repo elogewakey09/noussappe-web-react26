@@ -37,7 +37,7 @@ const ParcelVideo = () => {
       description: data?.banner_contents[5]?.value,
     },
   ];
-
+  console.log({ isLoading });
   return (
     <CustomStackFullWidth mt={{ xs: "20px", sm: "30px", md: "50px" }}>
       <Typography

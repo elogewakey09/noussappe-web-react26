@@ -176,6 +176,7 @@ const MiddleSection = (props) => {
       });
     }
   };
+  console.log({ state });
 
   const {
     data: searchData,
@@ -465,7 +466,9 @@ const MiddleSection = (props) => {
 
   const getCategoryWiseProduct = (products) => {
     const isAllExist = state.categoryId?.length === 0 ? true : false;
+    console.log("CCCC", products, state.categoryId);
     if (isAllExist) {
+      console.log("filteredData ", minMaxWiseSorted(products));
       return minMaxWiseSorted(products);
     } else {
       const categoryToString = state.categoryId?.map(String);
@@ -487,7 +490,7 @@ const MiddleSection = (props) => {
   if (inView) {
     setExpanded(false);
   }
-
+  console.log("isRefetching", state.data?.products);
   return (
     <NoSsr>
       <CustomBoxFullWidth>

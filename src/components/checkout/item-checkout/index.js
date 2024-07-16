@@ -83,7 +83,7 @@ import thunderstorm from "../assets/thunderstorm.svg";
 const ItemCheckout = (props) => {
   const { configData, router, page, cartList, campaignItemList, totalAmount } =
     props;
-
+  console.log({ campaignItemList });
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("md"));
   const [orderType, setOrderType] = useState("delivery");
@@ -214,6 +214,7 @@ const ItemCheckout = (props) => {
     }
   );
   useEffect(() => {}, [customerData]);
+  console.log({ customerData });
 
   useEffect(() => {
     const currentLatLng = JSON.parse(localStorage.getItem("currentLatLng"));

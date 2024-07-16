@@ -28,7 +28,7 @@ const ImagePreviewer = ({
       url: URL.createObjectURL(file), // type: file.name.split('.').pop(),
     };
   } else previewImage = file;
-
+  console.log({ previewImage });
   return (
     <>
       <CustomBoxForFilePreviewer>

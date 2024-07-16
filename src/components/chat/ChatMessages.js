@@ -36,7 +36,7 @@ const ChatMessages = ({ conversationData, scrollBottom, receiverType }) => {
     setModalOpen(value);
     setModalImage(null);
   };
-
+  console.log({ messagesData });
   return (
     <Box sx={{ p: 2 }}>
       <>

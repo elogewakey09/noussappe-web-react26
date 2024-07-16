@@ -25,6 +25,7 @@ const NewArrivals = ({ bannerData }) => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.only("sm"));
+  console.log({ bannerData });
   useEffect(() => {
     refetch();
   }, []);

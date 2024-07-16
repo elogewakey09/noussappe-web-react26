@@ -53,7 +53,7 @@ const PromotionalBanner = ({ bannerData }) => {
     header: "Up To 50% Off All Product.",
     subHeader: "We provide best quality & fresh grocery items",
   };
-
+  console.log({ bannerData });
   return (
     <>
       {bannerData?.bottom_section_banner && (

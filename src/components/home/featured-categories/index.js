@@ -61,6 +61,7 @@ const FeaturedCategories = ({ configData }) => {
       dispatch(setFeaturedCategories(data?.data));
     }
   }, [data]);
+  console.log({ featuredCategories });
 
   const moduleWiseCard = () => {
     switch (getCurrentModuleType()) {

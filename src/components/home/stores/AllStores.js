@@ -75,7 +75,7 @@ const AllStores = (props) => {
   //     fetchNextPage();
   //   }
   // }, [offset]);
-
+  console.log({ storeData });
   return (
     <CustomBoxFullWidth>
       <Grid container spacing={2}>

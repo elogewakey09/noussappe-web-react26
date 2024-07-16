@@ -51,6 +51,7 @@ const MultipleCheckboxWithTitle = (props) => {
     setSelectedId(id);
   }, [id]);
 
+  console.log({ selectedItems });
   useEffect(() => {
     selectedCategoriesHandler?.(isSmall ? storeSelectedItems : selectedItems);
   }, [selectedItems, storeSelectedItems]);

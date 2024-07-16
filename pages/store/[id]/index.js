@@ -19,7 +19,7 @@ const Index = ({ configData, storeDetails, landingPageData }) => {
   const metaImage =
     storeDetails?.meta_image_full_url ?? storeDetails.cover_photo_full_url;
   const [isSSR, setIsSSR] = useState(true);
-
+  console.log({ storeDetails });
   const initialSet = () => {
     const stores = [];
     stores.push(storeDetails);

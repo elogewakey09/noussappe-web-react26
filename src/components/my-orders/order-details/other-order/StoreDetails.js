@@ -37,7 +37,7 @@ const StoreDetails = (props) => {
   const router = useRouter();
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("md"));
-
+  console.log({ storeData });
   const handleClick = () => {
     router.push({
       pathname: "/profile",

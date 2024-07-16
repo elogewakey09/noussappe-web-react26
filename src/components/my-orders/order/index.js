@@ -65,6 +65,7 @@ const Order = (props) => {
       : "store_image_url";
   const router = useRouter();
 
+  console.log({ order });
   const handleClick = (e) => {
     if (order?.delivery_man) {
       dispatch(setDeliveryManInfoByDispatch(order?.delivery_man));
